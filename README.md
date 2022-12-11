@@ -1,18 +1,19 @@
 # LernberichtM183
 # Lern-Bericht
-✍️ ggf. Ihr Gruppenname und Ihre Gruppenmitglieder
+
 
 ## Einleitung
 
-✍️ Ein Satz, worum es in dem Projekt ging. Muss für einen externen Leser einfach zu verstehen sein.
+Bei diesem Projekt geht es darum, dass ich mir die Sicherheitslücke Direct Access, bei dem URLs nicht geschützt sind, angeschaut habe und dafür eine Lösung in Java gemacht habe.
+
 
 ## Was habe ich gelernt?
 
-✍️ Beschreiben Sie in einem Satz **eine** Sache, die Sie bei diesem Projekt gelernt haben und die Sie in diesem Lern-Bericht dokumentieren.
+Ich habe gelernt, dass URLs nicht immer sicher sind und dass z.B. man als nicht eingeloggter User in geschützen Bereichen nur für Administrator gehen kann. Dafür habe ich eine passende Lösung gefunden. ich habe ein Filter hinzugefügt, das die URL kontrolliert.
 
 ## Beschreibung
 
-✍️ Verwenden Sie drei verschiedene Medien, um zu zeigen, was Sie gelernt haben. Zum Beispiel:
+
 
 * Eine textliche Beschreibung
 * Ein deutliches, aussagekräftiges Bild oder eine kommentierte Bildschirm-Aufnahme
