@@ -13,7 +13,24 @@ Ich habe gelernt, dass URLs nicht immer sicher sind und dass z.B. man als nicht 
 
 ## Beschreibung
 
+Ich habe ein Filter erstellt, der für die Dateien /secured/* anwendbar ist. Ich habe ein Login Controller erstelltl. Dann habe ich in der Klasse doFilter den passenden Code geschrieben, so dass URL richtig verglichen werden.
 
+```java
+    public void doFilter(ServletRequest request, ServletResponse response,
+            FilterChain chain)
+            throws IOException, ServletException {
+        
+        final HttpServletRequest httpRequest = (HttpServletRequest) request;
+        final HttpServletResponse httpResponse = (HttpServletResponse) response;
+        final String loginURL = httpRequest.getContextPath() + "/index.xhtml";
+        //vergleichung
+        if (loginController.getUser() == null) {
+            httpResponse.sendRedirect(loginURL);
+        } 
+        
+        chain.doFilter(request, response); 
+    }
+```
 
 * Eine textliche Beschreibung
 * Ein deutliches, aussagekräftiges Bild oder eine kommentierte Bildschirm-Aufnahme
