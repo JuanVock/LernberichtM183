@@ -13,9 +13,12 @@ Ich habe gelernt, dass URLs nicht immer sicher sind und dass z.B. man als nicht 
 
 ## Beschreibung
 
-Ich habe ein Filter erstellt, der für die Dateien /secured/* anwendbar ist. Ich habe ein Login Controller erstelltl. Dann habe ich in der Klasse doFilter den passenden Code geschrieben, so dass URL richtig verglichen werden.
+Ich habe ein Filter erstellt, der für die Dateien /secured/* anwendbar ist. Das habe ich gemacht, indem ich bei Filter Mappings die richtigen Dateien dann geschrieben habe. Ich habe ein Login Controller erstellt. Dann habe ich in der Methode doFilter den passenden Code geschrieben, so dass URL richtig verglichen werden.
 
 ```java
+    @inject
+    Login Controller loginController;
+
     public void doFilter(ServletRequest request, ServletResponse response,
             FilterChain chain)
             throws IOException, ServletException {
@@ -32,19 +35,20 @@ Ich habe ein Filter erstellt, der für die Dateien /secured/* anwendbar ist. Ich
     }
 ```
 
-* Eine textliche Beschreibung
-* Ein deutliches, aussagekräftiges Bild oder eine kommentierte Bildschirm-Aufnahme
-* Ein gut dokumentierter Code-Fetzen
-* Ein Link zu einem *selbst aufgenommenen* youtube-Video oder `.gif`.
+[Youtube Video Direct Access](https://youtu.be/S7qHKhebR3c)
+
+
 
 ## Verifikation
 
-✍️ Erklären Sie kurz und bündig, inwiefern die von Ihnen verwendeten Medien zeigen, was Sie gelernt haben.
+Mit der Beschreibung sieht man, wie ich den Filter erstellt habe und wie ich für die passende Dateien anwendar machte. 
+Beim Code sieht man, wie ich das dann in der Methode umgesetzt habe.
+Beim Youtube Video sieht man das Ergebnis, dass die URLs geschützt sind.
 
 # Reflektion zum Arbeitsprozess
 
-👍 Überlegen Sie sich jeweils etwas, was gut an Ihrer Arbeit lief; 
+Es gab als Vorlage eine Filter Klasse mit der richtige Methode, sodass es für mich einfach war dieser Filter korrekt umzusetzten.
+Auch die Klasse an sich zu erstellen war für mich kein grosser Aufwand, da ich das schon einmal benutzt habe. 
+Es gabt keine grosse Schwierigkeiten bei diesem Projekt.
 
-👎 und etwas, was nicht gut lief.
 
-**VBV**: ✍️ Formulieren Sie davon ausgehend einen *handelbaren* Verbesserungsvorschlag.
