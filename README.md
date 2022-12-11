@@ -4,7 +4,7 @@
 
 ## Einleitung
 
-Bei diesem Projekt geht es darum, dass ich mir die Sicherheitslücke Direct Access, bei dem URLs nicht geschützt sind, angeschaut habe und dafür eine Lösung in Java gemacht habe.
+Bei diesem Projekt geht es darum, dass ich mir die Sicherheitslücke Direct Access, bei dem die URLs nicht geschützt sind, angeschaut habe und dafür eine Lösung in Java gemacht habe.
 
 
 ## Was habe ich gelernt?
@@ -13,7 +13,7 @@ Ich habe gelernt, dass URLs nicht immer sicher sind und dass z.B. man als nicht 
 
 ## Beschreibung
 
-Ich habe ein Filter erstellt, der für die Dateien /secured/* anwendbar ist. Das habe ich gemacht, indem ich bei Filter Mappings die richtigen Dateien dann geschrieben habe. Ich habe ein Login Controller erstellt. Dann habe ich in der Methode doFilter den passenden Code geschrieben, so dass URL richtig verglichen werden.
+Ich habe ein Filter erstellt, der für die Dateien /secured/* anwendbar ist. Das habe ich gemacht, indem ich bei Filter Mappings die richtigen Dateien dann geschrieben habe. Ich habe ein Login Controller erstellt. Dann habe ich in der Methode doFilter den passenden Code geschrieben, so dass die URLs richtig verglichen werden.
 
 ```java
     @inject
@@ -41,9 +41,9 @@ Ich habe ein Filter erstellt, der für die Dateien /secured/* anwendbar ist. Das
 
 ## Verifikation
 
-Mit der Beschreibung sieht man, wie ich den Filter erstellt habe und wie ich für die passende Dateien anwendar machte. 
+Mit der Beschreibung sieht man, wie ich den Filter erstellt habe und wie ich für die passende Dateien anwendar gemacht habe. 
 Beim Code sieht man, wie ich das dann in der Methode umgesetzt habe.
-Beim Youtube Video sieht man das Ergebnis, dass die URLs geschützt sind.
+Beim Youtube Video sieht man das Ergebnis, wie die URLs geschützt sind.
 
 # Reflektion zum Arbeitsprozess
 
